@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body, div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  height: 500px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+div {
+  width: 300px;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+ul {
+  width: 100%;
+}
+
+li {
+  opacity: 1;
+  list-style: none;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+button, div {
+  background: darkgray;
+  color: white;
+}
+
+button {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 4px;
+  margin-left: 10px;
+}
+
+.DelTransition {
+  /* animation-name: swoop; */
+  /*animation-duration: 0.5s;*/
+  animation-timing-function: ease-in;
+  transition-duration: 0.5s;
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+@keyframes swoop {
+  from {
+
+  } to {
+    color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+  }
+}
